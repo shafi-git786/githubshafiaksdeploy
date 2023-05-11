@@ -2,7 +2,7 @@ name: 1-actions-ci-cd-aks
 
 on:
   push:
-    branches: [ main ]
+    branches: none # [ main ]
     paths: .github/workflows/1-actions-ci-cd-aks.yml
   pull_request:
     branches:  none # [ main ]
@@ -18,8 +18,8 @@ jobs:
       IMAGE_NAME: webapp
       IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
       
-      CLUSTER_NAME: aks-cluster
-      RESOURSE_GROUP: rg-aks-cluster
+      CLUSTER_NAME: shafi-aks-test
+      RESOURSE_GROUP: shafi-rg-aks
     
     steps:
 
