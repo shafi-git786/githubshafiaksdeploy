@@ -19,7 +19,7 @@ jobs:
       IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
       
       CLUSTER_NAME: shafi-aks-test
-      RESOURSE_GROUP: shafi-rg-aks
+      RESOURSE_GROUP: shafi-rg
     
     steps:
 
